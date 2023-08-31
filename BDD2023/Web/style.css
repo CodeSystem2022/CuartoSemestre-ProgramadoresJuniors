@@ -1,4 +1,5 @@
 /*Estilos globales*/
+
 a {
   text-decoration: none;
 }
@@ -53,6 +54,7 @@ body {
   background: linear-gradient(to right, #7169cc, #4d68d9);
   color: #fafafa;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -64,7 +66,7 @@ body {
   width: 250px;
   height: 400px;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 
 .registration-form {
@@ -104,4 +106,36 @@ body {
 
 .registration-form button:hover {
   background: linear-gradient(to right, #4d68d9, #ab6ab6);
+}
+
+/*texto agregado*/
+
+.textContainer {
+  background-color: #4b40be;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 170px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.footer {
+  width: 100%;
+  margin-top: 80px;
+  background-color: #8094e3;
+  text-align: center;
+  padding: 10px;
+}
+.social-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerIcon {
+  width: 50px;
+}
+.footerIcon2 {
+  margin-top: 5px;
+  width: 70px;
 }
