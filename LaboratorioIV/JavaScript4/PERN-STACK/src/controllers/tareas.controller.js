@@ -1,12 +1,13 @@
 import { pool } from '../db.js';
 
+
+
 export const listarTareas = async (req, res) => {
     const result = await pool.query('SELECT * FROM tareas');
     return res.json(result.rows)
 }
 
 export const listarTarea = async (req, res) => {
-
     const result = await pool.query(`SELECT * FROM tareas WHERE id = $1`, [req.params.id]);
     if (result.rowCount === 0) {
         return res.status(404).json({ message: 'la tarea no existe' });
@@ -48,3 +49,4 @@ export const eliminarTarea = async (req, res) => {
     }
     return res.sendStatus(204); //bien pero no devuelve nada al front
 };
+
