@@ -14,16 +14,20 @@
 
 | Semana | Scrum Master |
 | ---- | ---- |
-|  Semana 1 | *Emir Maya* |
-|  Semana 2 | *Renzo Viscio* |
-|  Semana 3 | *Bianca Tosetto* |
-|  Semana 4| *Soel Attala* |
-|  Semana 5 | *Gastón Franco* |
-|  Semana 6 | *Renzo Viscio* |
-|  Semana 7 | *Soel Attala* |
-|  Semana 8| *Emir Maya* |
-|  Semana 9 | *Gastón Franco* |
-|  Semana 10 | *Bianca Tosetto* |
+| Semana 1 | Emir Maya |
+| Semana 2 | Soel Attala |
+| Semana 3 | Renzo Viscio |
+| Semana 4 | Bianca Tosetto|
+| Semana 5 | Gastón Franco |
+| Semana 6 | Emir Maya |
+| Semana 7 | Renzo Viscio |
+| Semana 8 | Soel Attala |
+| Semana 9 | Bianca Tosetto|
+| Semana 10 | Gastón Franco |
+| Semana 11 | Emir Maya |
+| Semana 12 | Soel Attala |
+| Semana 13 | Renzo Viscio |
+| Semana 14 | Bianca Tosetto|
 
 
 ## `Instrucciones` 
