@@ -12,7 +12,7 @@
 
 ## `Organización`
 
-|Semana | Scrum Master |
+| Semana | Scrum Master |
 | ---- | ---- |
 | Semana 1 | Emir Maya |
 | Semana 2 | Soel Attala |
