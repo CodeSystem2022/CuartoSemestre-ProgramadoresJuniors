@@ -1,11 +1,9 @@
 import { pool } from '../db.js';
 
-
-
 export const listarTareas = async (req, res) => {
     const result = await pool.query('SELECT * FROM tareas WHERE usuario_id = $1', [req.usuarioId]);
     return res.json(result.rows);
-}
+};
 
 export const listarTarea = async (req, res) => {
     const result = await pool.query(`SELECT * FROM tareas WHERE id = $1`, [req.params.id]);
@@ -32,12 +30,11 @@ export const crearTarea = async (req, res, next) => {
     }
 }
 
-
 export const actualizarTarea = async (req, res) => {
     const { title, description } = req.body;
     const result = await pool.query('UPDATE tareas SET title = $1, description = $2 WHERE id = $3 RETURNING *', [title, description, req.params.id]);
     if (result.rowCount === 0) {
-        return res.status(404).json({ message: 'no existe tarea con ese id' });
+        return res.status(404).json({ message: 'No existe tarea con ese id' });
     }
     return res.json(result.rows[0]);
 };
@@ -45,7 +42,7 @@ export const actualizarTarea = async (req, res) => {
 export const eliminarTarea = async (req, res) => {
     const result = await pool.query(`DELETE FROM tareas WHERE id = $1`, [req.params.id]);
     if (result.rowCount === 0) {
-        return res.status(404).json({ message: 'la tarea no existe' });
+        return res.status(404).json({ message: 'No existe tarea con ese id' });
     }
     return res.sendStatus(204); //bien pero no devuelve nada al front
 };
